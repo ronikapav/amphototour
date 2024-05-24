@@ -101,8 +101,8 @@
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     position: relative;
     /* padding: 1.5rem; */
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 70px;
+    margin-bottom: 80px;
     height: 85%;
     overflow-x: hidden;
     overflow-y: auto;
@@ -379,7 +379,7 @@
     }
 
     .cart_body {
-        margin-top: 90px;
+        margin-top: 80px;
         margin-bottom: 90px;
     }
 
