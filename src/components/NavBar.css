@@ -4,7 +4,7 @@ nav.navbar {
     left: 0;
     padding: 10px 0;
     width: 100%;
-    z-index: 99999999999999999999999999999999999999999999999;
+    z-index: 1;
     transition: ease-in-out .4s;
     -webkit-transition: ease-in-out .4s;
     -moz-transition: ease-in-out .4s;
@@ -14,7 +14,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
     padding: 0;
-    z-index: 99999999999999999999999999999999999999999999999;
+    /* z-index: 99999999999999999999999999999999999999999999999; */
     background-color: #3a493d;
     border-bottom: 2px solid rgb(255, 185, 33);
     background-image: url("https://www.yudiz.com/codepen/photography-banner/frame.png");
