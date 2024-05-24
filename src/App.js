@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      gsap.fromTo(".Add", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 1, ease: "power.out" });
+      // gsap.fromTo(".Add", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 1, ease: "power.out" });
     }, 3000);
   
     // Replace the GSAP animation with ScrollTrigger
@@ -66,7 +66,7 @@ function App() {
         >
           <NavBar />
           <Cart />
-        <div className="Add">
+        {/* <div className="Add"> */}
           <HeroSection />
           <CreatorSection />
           <VideoSection />
@@ -76,7 +76,7 @@ function App() {
           <CertificateSection />
           <ReviewsSection />
           <FooterSection />
-          </div>
+          {/* </div> */}
           <ScrollButton />
         </SnackbarProvider>
         )}
