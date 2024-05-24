@@ -14,6 +14,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
     padding: 0;
+    z-index: 99999999999999999999999999999999999999999999999;
     background-color: #3a493d;
     border-bottom: 2px solid rgb(255, 185, 33);
     background-image: url("https://www.yudiz.com/codepen/photography-banner/frame.png");
@@ -169,6 +170,7 @@ nav.navbar.scrolled .navbar-text .social-icons a {
         border: 2px solid rgb(255, 185, 33);
         padding: 20px;
         margin: 15px;
+        z-index: 99999999999999999999999999999999999999999999999;
     }
 
     ::selection {
