@@ -101,7 +101,8 @@
     padding: 1.5rem;
     margin-top: 60px;
     margin-bottom: 60px;
-    max-height: 85%;
+    /* max-height: 85%; */
+    z-index: -1;
     overflow-x: hidden;
     overflow-y: auto;
 }
