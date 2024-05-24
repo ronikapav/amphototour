@@ -48,11 +48,11 @@ const ReviewsSection = () => {
   
     const nextSlide = useCallback(() => {
         setCurrentSlide((currentSlide + 1) % slides.length);
-      }, [currentSlide, slides.length]);
+      }, [currentSlide]);
     
       const prevSlide = useCallback(() => {
         setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
-      }, [currentSlide, slides.length]);
+      }, [currentSlide]);
     
       return (
         <div className='reviews-container'>
