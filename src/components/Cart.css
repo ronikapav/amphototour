@@ -361,8 +361,12 @@
 
 @media screen and (max-width: 500px) {
     #cart {
-        left: 50%;
-        transform: translate(-50%, -50%);
+        right: 40px;
+        /* transform: translate(-50%, -50%); */
+        /* right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0; */
     }
     
 }
@@ -380,9 +384,6 @@
     .cart_body {
         margin-top: 90px;
         margin-bottom: 90px;
-        max-height: 85%;
-        overflow-x: hidden;
-        overflow-y: auto;
     }
 
     .cart_head {
