@@ -14,11 +14,12 @@
 /*--====== Cart Section ======--*/
 #cart {
     position: fixed;
+    display: flex;
     top: 120px;
     right: 40px;
     z-index: 1;
-    /* width: 400px;
-    max-height: 400px; */
+    width: 400px;
+    max-height: 500px;
     /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
@@ -31,7 +32,7 @@
     background-size: 55px 55px;
     position: absolute;
     right: 0;
-    max-width: 400px;
+    width: 400px;
     max-height: 500px;
     /* top: 0;
     right: 0; */
@@ -102,7 +103,7 @@
     /* padding: 1.5rem; */
     margin-top: 60px;
     margin-bottom: 60px;
-    /* height: 15%; */
+    height: 85%;
     overflow-x: hidden;
     overflow-y: auto;
     z-index: -1;
@@ -361,20 +362,16 @@
 
 @media screen and (max-width: 500px) {
     #cart {
-        right: 40px;
-        /* transform: translate(-50%, -50%); */
-        /* right: 0;
-        top: 0;
-        left: 0;
-        bottom: 0; */
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
 }
 
 @media screen and (max-width: 400px) {
-    /* #cart {
+    #cart {
         width: 300px;
-    } */
+    }
 
     .cart_content {
         width: 300px;
