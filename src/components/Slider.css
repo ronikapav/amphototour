@@ -1,0 +1,126 @@
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  img {
+    height: auto;
+    max-width: 800px;
+    box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+  }
+  
+  .btn-previous {
+    position: absolute;
+    left: 10px; /* Расположение кнопки "Previous" слева */
+    
+  }
+  
+  .btn-next {
+    position: absolute;
+    right: 10px; /* Расположение кнопки "Next" справа */
+    
+  }
+
+  @media screen and (max-width: 767px) {
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+  .button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    gap: 4px;
+  }
+  
+  .button:hover {
+    animation: move 2s infinite ease;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+  
+    50% {
+      transform: translateX(20px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .round {
+    width: 6px;
+    height: 6px;
+    background: #f9fd09;
+    border-radius: 50%;
+  }
+  
+  .line {
+    display: flex;
+    gap: 4px;
+  }
+
+  .one-previous {
+    transform: translateX(40px);
+  }
+  
+  .two-previous {
+    transform: translateX(30px);
+  }
+  
+  .three-previous {
+    transform: translateX(20px);
+  }
+  
+  .four-previous {
+    transform: translateX(10px);
+  }
+  
+  .five-previous {
+    transform: translateX(20px);
+  }
+  
+  .six-previous {
+    transform: translateX(30px);
+  }
+
+  .seven-previous {
+    transform: translateX(40px);
+  }
+
+  .two-next {
+    transform: translateX(10px);
+  }
+  
+  .three-next {
+    transform: translateX(20px);
+  }
+  
+  .four-next {
+    transform: translateX(30px);
+  }
+  
+  .five-next {
+    transform: translateX(20px);
+  }
+  
+  .six-next {
+    transform: translateX(10px);
+  }

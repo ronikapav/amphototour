@@ -1,0 +1,236 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+/* @import url(https://fonts.googleapis.com/css?family=Raleway:500,700); */
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:10vh;
+}
+
+.products-title {
+  color: #ccc;
+  font-size: 1.125rem; /* 18px */
+  max-width: 30rem; /* 480px */
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.products-icon {
+  color: rgb(255, 185, 33); /* indigo-600 */
+  margin-left: 0.75rem;
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+}
+
+.workshop-title {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 400;
+  max-width: 48rem;
+  margin: 0 auto 4rem;
+  line-height: 1.5;
+  font-family: "Russo One", sans-serif;
+  font-style: normal;
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: all .3s;
+}
+
+.products-card {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  margin: 30px;
+  min-width: 300px;
+  max-width: 350px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.767) 0%, rgb(0, 0, 0) 40%);
+  text-align: left;
+  color: #eeeeee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.644);
+  font-size: 16px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: all .3s;
+}
+
+.products-card:hover {
+  transform: scale(0.95);
+  border: 2px solid rgb(255, 185, 33);
+}
+
+.products-card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.products-card > img,
+.products-card .products-image img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  max-width: 100%;
+}
+.products-card > img {
+  vertical-align: top;
+  position: relative;
+  -webkit-filter: blur(5px) grayscale(100%);
+  filter: blur(5px) grayscale(100%);
+  opacity: 0.6;
+}
+.products-card figcaption,
+.products-card .products-image {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.products-card .products-image {
+  position: absolute;
+  /* filter: grayscale(100%); */
+  mix-blend-mode: unset;
+  opacity: 0.7;
+  top: 0;
+  bottom: 35%;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  box-shadow: 100px 0px 0px rgba(0, 0, 0, 0.842), 0px 100px 100px rgba(255, 255, 255, 0.384);
+}
+.products-card .products-image img {
+  position: absolute;
+  top: 0;
+}
+.products-card figcaption {
+  position: absolute;
+  top: 65%;
+  bottom: 46px;
+  left: 20px;
+  right: 20px;
+  border-bottom: 2px solid rgb(255, 185, 33);
+  padding-top: 20px;
+  z-index: 1;
+}
+.products-card h3,
+.products-card p {
+  margin: 0;
+}
+.products-card h3 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 22.5px;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+}
+.products-card p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "Tektur", sans-serif;
+}
+.products-card .products-price,
+.products-card .products-add-to-cart {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 1px;
+}
+.products-card .products-price {
+  left: 0;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+.products-card .products-price s {
+  margin-right: 5px;
+  opacity: 0.5;
+  font-size: 0.9em;
+}
+.products-card .products-add-to-cart {
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  opacity: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9em;
+  right: 0;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.products-card .products-add-to-cart i {
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+.btn.products-add-to-cart.Добавлено {
+  color: rgb(255, 185, 33);
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.products-card:hover .products-add-to-cart,
+.products-card.hover .products-add-to-cart {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.products-add-to-cart{
+  border: none;
+  background: none;
+}
+
+@media (max-width: 500px) {
+  .products-container {
+    margin-top:20vh;
+  }
+
+  .products-title {
+    font-size: 0.9rem;
+  }
+
+  .workshop-title {
+    font-size: 1.5rem;
+  }
+
+  .products-card h3 {
+    font-size: 14px;
+  }
+
+  .products-card p {
+    font-size: 12px;
+  }
+  .products-card .products-price {
+    font-size: 14px;
+  }
+
+  .products-card figcaption {
+    top: 50%;
+  }
+
+  .products-card .products-image {
+    bottom: 50%;
+  }
+
+  .products-card .products-add-to-cart {
+    font-size: 0.7em;
+  }
+}

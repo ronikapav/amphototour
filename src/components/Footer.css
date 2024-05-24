@@ -1,0 +1,253 @@
+footer .footer-top {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top:10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-title {
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 400;
+  /* max-width: 48rem; */
+  line-height: 1.5;
+  font-family: "Russo One", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  color: #ccc;
+  font-size: 1.125rem;
+  margin-top: 2.5rem;
+  /* margin: 20px auto; */
+  margin-bottom: 2.5rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  font-family: "Tektur", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.footer-privacy {
+  color: #ccccccd8;
+  margin-top: 1.5rem;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* footer .footer-top .footer-newsletter {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+} */
+
+/* Стили для формы */
+
+.form{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Стили для полей ввода */
+.inputField input[type="text"],
+.inputField input[type="email"] {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Стили для кнопки отправки */
+.inputField button {
+  /* display: block; */
+  width: 100%;
+  padding: 6px 26px;
+  background-color: rgb(255, 185, 33);
+  color: #000000;
+  border: 1px solid rgb(255, 185, 33);
+  border-radius: 3px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Alumni Sans", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputField button:hover {
+  background-color: #1d1d1d00;
+  color: #ffffff;
+}
+
+/* Скрыть спан для спиннера */
+.spinner.hidden {
+  display: none;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  #subscribeForm {
+      padding: 10px;
+  }
+
+  .inputField input[type="text"],
+  .inputField input[type="email"],
+  .inputField button {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 1201px) {
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/* footer .footer-top .footer-newsletter form {
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+footer .footer-top .footer-newsletter form input[type="text"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #200124;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: rgb(255, 185, 33);
+} */
+
+footer .footer-top .social-links {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+footer .footer-top .social-links a {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  line-height: 1;
+  padding: 7px 5px;
+  margin-right: 20px;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  background-color: #9428280f;
+  font-size: 25px;
+}
+
+footer .footer-top .social-links a:hover {
+  background: rgb(255, 185, 33);
+  color: #000000;
+  text-decoration: none;
+}
+
+footer .footer-bottom {
+  border-top: 2px solid rgb(255, 185, 33);
+  z-index: 2;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer .copyright {
+  float: left;
+  color: rgb(255, 255, 255);
+}
+
+footer .credits {
+  float: right;
+  font-size: 13px;
+}
+
+footer .copyright, .footer .credits {
+  float: none;
+  text-align: center;
+}
+footer .credits {
+  padding-top: 5px;
+}
+
+
+@media (max-width: 1050px) {
+  .footer {
+    margin-top: 4vh;
+    /* margin:2vh; */
+  }
+  
+}
+
+@media (max-width: 768px) {
+  footer .copyright, footer .credits {
+    float: none;
+    text-align: center;
+  }
+  footer .credits {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  footer {
+    margin-top:20vh;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-text{
+    font-size: 0.9rem;
+  }
+
+  .footer-privacy {
+    font-size: 0.8rem;
+  }
+}

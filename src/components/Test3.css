@@ -1,0 +1,95 @@
+.carousel {
+    width: 40rem;
+    margin: 0 auto;
+    background-color: #333; /* замените на Ваш цвет */
+    padding: 2rem 2rem 5rem 3rem;
+    border-radius: 0.8rem;
+    color: #fff; /* замените на Ваш цвет */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media only screen and (min-width: 37.5em) {
+    .carousel {
+        width-max: 80rem;
+        margin: 10rem auto;
+        gap: 8.6rem;
+        padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.carousel__img-container {
+    height: 20rem;
+}
+
+.carousel__image {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 0.8rem;
+    transform: scale(1.5);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.carousel__btn {
+    background-color: #fff; /* замените на Ваш цвет */
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__btn--left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel__btn--right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+ion-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #333; /* замените на Ваш цвет */
+}
+
+.testimonial {
+    padding: 5rem;
+    padding-top: 10rem;
+
+    @media only screen and (min-width: 37.5em) {
+        padding: 0;
+    }
+}
+
+.testimonial__text {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.testimonial__name {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.testimonial__job {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
