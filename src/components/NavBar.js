@@ -50,6 +50,9 @@ function NavBar() {
     setMenuOpen(!menuOpen);
   };
 
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Close the menu when a link is clicked
+  };
 
 
   
@@ -87,7 +90,6 @@ function NavBar() {
             <img src="https://rafaelalucas.com/dailyui/12/assets/shopping-cart.svg" alt="bag-icon" />
             {cartQuantity > 0 && <span className="itemNumber">{cartQuantity}</span>}
           </div>
-          {/* <Navbar.Toggle className="border-light text-light" aria-controls="basic-navbar-nav" onClick={handleToggleClick}> */}
           <Navbar.Toggle className={`icon nav-icon-1 ${menuOpen ? 'open' : ''}`} aria-controls="basic-navbar-nav" onClick={handleToggleClick}>
             <span></span>
             <span></span>
@@ -100,14 +102,16 @@ function NavBar() {
             <span></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-          {/* <Navbar.Collapse id="basic-navbar-nav" className={menuOpen ? "open" : ""}> */}
             <Nav className="me-auto">
               <Nav.Link
                 href="#video-section"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() =>  {
+                onUpdateActiveLink("home");
+                handleLinkClick();
+              }}
               >
                 Проект
               </Nav.Link>
@@ -116,7 +120,10 @@ function NavBar() {
                 className={
                   activeLink === "skills" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() =>  {
+                  onUpdateActiveLink("home");
+                  handleLinkClick();
+                }}
               >
                 Туры
               </Nav.Link>
@@ -127,7 +134,10 @@ function NavBar() {
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() =>  {
+                  onUpdateActiveLink("home");
+                  handleLinkClick();
+                }}
               >
                 Обучение
               </Nav.Link>
@@ -138,24 +148,24 @@ function NavBar() {
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() =>  {
+                  onUpdateActiveLink("home");
+                  handleLinkClick();
+                }}
               >
                 Связь
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <span className="social-icons">
-                {/* Github */}
                 <a href="https://www.youtube.com/your_channel" target="_blank" rel="noopener noreferrer">
                   {/* <i className="bi bi-github"></i> */}
                   <FaYoutube className="github" />
                 </a>
-                {/* LinkedIn */}
                 <a href="https://www.facebook.com/your_username" target="_blank" rel="noopener noreferrer">
                   {/* <i className="bi bi-linkedin"></i> */}
                   <FaFacebook />
                 </a>
-                {/* Instagram */}
                 <a href="https://www.instagram.com/your_username" target="_blank" rel="noopener noreferrer">
                   {/* <i className="bi bi-instagram"></i> */}
                   <FaInstagram />
@@ -178,7 +188,6 @@ function NavBar() {
             {cartQuantity > 0 && <span className="itemNumber">{cartQuantity}</span>}
           </div>
           <ModalNavBar isOpen={modalIsOpen} onRequestClose={closeModal} />
-          {/* <NavBarProducts/> */}
         </Container>
       </Navbar>
 }
