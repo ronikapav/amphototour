@@ -298,7 +298,7 @@ nav.navbar.scrolled .navbar-text .social-icons a {
       
       .nav-icon-1.open span:nth-child(4) {
         left: 6px;
-        top: 18px;
+        top: 17px;
       }
       
       .nav-icon-1.open span:nth-child(6) {
@@ -307,7 +307,7 @@ nav.navbar.scrolled .navbar-text .social-icons a {
       }
       
       .nav-icon-1.open span:nth-child(8) {
-        left: 18px;
+        left: 17px;
         bottom: 6px;
       }
 }
