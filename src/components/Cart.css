@@ -108,44 +108,46 @@
     z-index: -1;
 }
 
-@-moz-document url-prefix() {
-    scrollbar {
-        -moz-appearance: none !important;
-        width: 12px !important;
+@media screen and (min-width: 501px) {
+    @-moz-document url-prefix() {
+        scrollbar {
+            -moz-appearance: none !important;
+            width: 12px !important;
+        }
+    
+        scrollbarbutton {
+            -moz-appearance: none !important;
+            background: #f1f1f1 !important;
+        }
+    
+        scrollbarthumb {
+            -moz-appearance: none !important;
+            background: #888 !important;
+            border-radius: 6px !important;
+        }
+    
+        scrollbarthumb:hover {
+            background: #555 !important;
+        }
     }
-
-    scrollbarbutton {
-        -moz-appearance: none !important;
-        background: #f1f1f1 !important;
+    
+    ::-webkit-scrollbar {
+        width: 12px;
     }
-
-    scrollbarthumb {
-        -moz-appearance: none !important;
-        background: #888 !important;
-        border-radius: 6px !important;
+    
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
     }
-
-    scrollbarthumb:hover {
-        background: #555 !important;
+    
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+        border: 3px solid #f1f1f1;
     }
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 6px;
-    border: 3px solid #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
 
 .cart_items {
