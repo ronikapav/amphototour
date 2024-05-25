@@ -27,6 +27,12 @@ nav.navbar.scrolled {
     color: #fff;
 }
 
+.nav-icon-1:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
 .nav-link.navbar-link {
     color: #ffffff !important;
     font-family: "Russo One", sans-serif;

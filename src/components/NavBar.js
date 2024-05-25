@@ -12,7 +12,6 @@ import ModalNavBar from './ModalNavBar';
 import logo from '../assets/logo.png';
 
 function NavBar() {
-  // Difine the state for the active links
   const [activeLink, setactiveLink] = useState("home");
   // Difine the state for the scroll position
   const [scrolled, setScrolled] = useState(false);
