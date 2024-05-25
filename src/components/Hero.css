@@ -1838,3 +1838,9 @@
       letter-spacing: -1px;
     }
   }
+
+  @media screen and (max-width: 380px) {
+    .right-part {
+      top: 20px;
+    }
+  }
