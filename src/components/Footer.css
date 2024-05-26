@@ -169,16 +169,16 @@ footer .footer-top .social-links a {
   display: inline-block;
   border: 1px solid #ffffff;
   color: #ffffff;
-  line-height: 1;
-  padding: 7px 5px;
-  margin-right: 20px;
+  padding: auto;
+  margin: 0 10px;
   border-radius: 50%;
-  text-align: center;
+  font-size: 30px;
+  font-family: "Russo One", sans-serif;
   width: 50px;
   height: 50px;
   transition: 0.3s;
   background-color: #9428280f;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 footer .footer-top .social-links a:hover {
