@@ -1700,7 +1700,16 @@
     }
   }
 
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: 1366px) {
+    .left-part h1 {
+      font-size: clamp(60px, 1.5vw, 210px);
+    }
+    .left-part h1 .text {
+      font-size: clamp(55px, 1.5vw, 210px);
+    }
+  }
+
+  @media screen and (max-width: 1180px) {
     .left-part h1 {
       height: 200px;
       font-size: clamp(50px, 1.5vw, 210px);
@@ -1719,13 +1728,13 @@
     }
 
     .book-link {
-      font-size: 25px;
+      font-size: 20px;
       letter-spacing: -1px;
     }
   }
 
 
-  @media screen and (max-width: 1030px) {
+  @media screen and (max-width: 1023px) {
     .info-section {
       display: block;
       padding: 0;
