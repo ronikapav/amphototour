@@ -5,6 +5,8 @@ import { addItem, removeItem } from './cartSlice';
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useSnackbar } from "notistack";
+// import { FaShoppingCart } from 'react-icons/fa';
+import { BsCart, BsCartFill } from 'react-icons/bs';
 
 
 const ProductsCard = (props) => {
@@ -41,22 +43,6 @@ const ProductsCard = (props) => {
  setIsAdded(false);
     }
 }, [removedItems, props.id]);
-
-
- /* const handleAddToCart = () => {
-
-      // here, we cannot directly pass the `props` as it is, if we need to access the same value within the child component. So, we've to pass it as a different prop like this- `{...props}`
-      const item = { ...props };
-      dispatch(addItem(item));
-
-      setIsAdded(true);
-
-      setIsAdded(!isAdded);
-
-      // setTimeout(() => {
-      //     setIsAdded(false);
-      // }, 3000);
-  };*/
   
   const { cartItems } = useSelector((state) => state.cart);
 
@@ -95,8 +81,8 @@ const ProductsCard = (props) => {
       onClick={handleAddToCart}
       >
       {isAdded ? 'Добавлено' : 'Купить'}
-      <i className={`ion-ios-cart${isAdded ? '' : '-outline'}`}></i>
-
+       {/* <i className={`ion-cart${isAdded ? '' : '-outline'}`}></i> */}
+       <i>{isAdded ? <BsCartFill className="BsCart" /> : <BsCart className="BsCart" />}</i>
       </button>
     </figure>
   );

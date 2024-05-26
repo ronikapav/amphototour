@@ -178,7 +178,11 @@
 }
 .products-card .products-add-to-cart i {
   margin-left: 5px;
-  font-size: 1.1em;
+  font-size: 1em;
+}
+
+.BsCart {
+  margin-bottom: 5px;
 }
 
 .btn.products-add-to-cart.Добавлено {
