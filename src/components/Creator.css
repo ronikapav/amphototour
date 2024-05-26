@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 10vh;
   }
   
@@ -243,8 +244,14 @@
     .author-p {
       text-align: left;
     }
+
   }
 
+  @media (max-width: 750px) {
+    .author-ul {
+      margin-right: 10px;
+    }
+  }
 
   @media (min-width: 500px) {
     .author-container {
@@ -254,9 +261,19 @@
   }
 
   @media (max-width: 500px) {
+
+    .author-card {
+      transition: none;
+    }
+
+    .author-card:hover {
+      rotate: none;
+    }
+  
     .author-container {
       margin-top:20vh;
     }
+
     .author-h1 {
       font-size: 1.4em;
     }

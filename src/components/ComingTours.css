@@ -188,7 +188,7 @@
     right: 0;
    }
   
-  @media (max-width: 800px){
+  @media (max-width: 830px){
     .row {
       display: flex;
       justify-content: center;
