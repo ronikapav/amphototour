@@ -48,12 +48,12 @@
   .info-section {
     height: 100svh;
     min-height: 780px;
-    padding: 0 0 0 30px;
+    padding: 50px 0 0 30px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     user-select: none;
     overflow: hidden;
   }
@@ -1830,7 +1830,7 @@
       font-size: 12px;
       line-height: 1.7;
       width: 100%;
-      margin: -15px;
+      margin: 0px;
     }
 
     .book-link {
@@ -1841,6 +1841,14 @@
 
   @media screen and (max-width: 380px) {
     .right-part {
-      top: 20px;
+      top: 0px;
+    }
+
+    .left-part p {
+      margin-top: -50px;
+    }
+
+    .left-part a {
+      margin-bottom: -10px;
     }
   }
