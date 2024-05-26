@@ -106,8 +106,7 @@ footer .footer-top {
   }
 
   .inputField input[type="text"],
-  .inputField input[type="email"],
-  .inputField button {
+  .inputField input[type="email"] {
       font-size: 12px;
   }
 }
