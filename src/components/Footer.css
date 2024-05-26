@@ -198,6 +198,19 @@ footer .footer-bottom {
 footer .copyright {
   float: left;
   color: rgb(255, 255, 255);
+  font-family: "Alumni Sans", sans-serif;
+  letter-spacing: 1.9px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.RoniKa {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Alumni Sans", sans-serif;
+  letter-spacing: 1.9px;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 footer .credits {

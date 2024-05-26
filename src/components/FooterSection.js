@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   return (
@@ -57,7 +58,7 @@ const FooterSection = () => {
       </div>
       <div className="container footer-bottom clearfix">
         <div className="copyright">
-          &copy; 2024 <strong><span>RoniKa</span></strong>. All Rights Reserved
+          &copy; 2024 <strong><Link className='RoniKa' to="https://ronika.netlify.app/">RoniKa</Link></strong>. Все права защищены.
         </div>
         {/* <div className="credits">
         All rights reserved.

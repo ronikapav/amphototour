@@ -78,3 +78,12 @@
     opacity: 0;
   }
 }
+
+@-moz-document url-prefix() {
+  .button-to-top {
+    &::before, &::after {
+      left: -3px;
+      top: 1px;
+    }
+  }
+  }

@@ -18,6 +18,7 @@ import Loader from './components/Loader';
 import React, { useState, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { BrowserRouter } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,6 +65,7 @@ function App() {
             horizontal: "left",
           }}
         >
+          <BrowserRouter>
           <NavBar />
           <Cart />
         {/* <div className="Add"> */}
@@ -78,6 +80,7 @@ function App() {
           <FooterSection />
           {/* </div> */}
           <ScrollButton />
+          </BrowserRouter>
         </SnackbarProvider>
         )}
     </div>
