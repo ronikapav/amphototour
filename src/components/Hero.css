@@ -1745,12 +1745,26 @@
     }
   
     .left-part {
-      padding: 236px 16px 60px;
+      padding: 176px 16px 10px;
     }
 
     .right-part {
       top: 50px;
       margin: auto;
+    }
+
+    .left-part h1 {
+      height: 140px;
+      font-size: clamp(50px, 1.5vw, 210px);
+    }
+  
+    .left-part h1 .text {
+      font-size: clamp(35px, 1.5vw, 210px);
+    }
+  
+    .left-part p {
+      font-size: 15px;
+      width: 90%;
     }
   }
 
