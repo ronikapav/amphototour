@@ -13,7 +13,7 @@
 
 /*--====== Cart Section ======--*/
 #cart {
-    position: fixed;
+    position: absolute;
     display: flex;
     top: 120px;
     right: 40px;
