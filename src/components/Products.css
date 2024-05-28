@@ -205,7 +205,7 @@
 
 @media (max-width: 500px) {
   .products-container {
-    margin-top:20vh;
+    margin-top:10vh;
   }
 
   .products-title {
@@ -237,5 +237,21 @@
 
   .products-card .products-add-to-cart {
     font-size: 0.7em;
+  }
+}
+
+@media (max-width: 340px) {
+
+  .products-title  {
+    font-size: 14px;
+  }
+
+  .workshop-title {
+    font-size: 20px;
+  }
+
+  .products-card {
+    margin: 0px 10px 30px 10px;
+    min-width: 300px;
   }
 }

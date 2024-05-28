@@ -208,3 +208,14 @@
       font-size: 1.5rem;
     }
   }
+
+  @media (max-width: 340px) {
+
+    .coming-tours-title  {
+      font-size: 14px;
+    }
+  
+    .tours-title {
+      font-size: 20px;
+    }
+  }

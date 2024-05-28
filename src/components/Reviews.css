@@ -462,3 +462,115 @@
       padding: 0.5em;
     }
   }
+
+  @media (max-width: 340px) {
+
+    .two-previous {
+      transform: translateX(15px);
+    }
+    
+    .three-previous {
+      transform: translateX(5px);
+    }
+    
+    .four-previous {
+      transform: translateX(-5px);
+    }
+    
+    .five-previous {
+      transform: translateX(5px);
+    }
+    
+    .six-previous {
+      transform: translateX(15px);
+    }
+  
+    .two-next {
+      transform: translateX(-15px);
+    }
+    
+    .three-next {
+      transform: translateX(-5px);
+    }
+    
+    .four-next {
+      transform: translateX(5px);
+    }
+    
+    .five-next {
+      transform: translateX(-5px);
+    }
+    
+    .six-next {
+      transform: translateX(-15px);
+    }
+
+    .reviews-title  {
+      font-size: 14px;
+    }
+  
+    .heading-reviews-container {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 570px) and (max-height: 330px) {
+    
+    .one-previous {
+      transform: translateX(50px);
+    }
+    
+    .two-previous {
+      transform: translateX(40px);
+    }
+    
+    .three-previous {
+      transform: translateX(30px);
+    }
+    
+    .four-previous {
+      transform: translateX(20px);
+    }
+    
+    .five-previous {
+      transform: translateX(30px);
+    }
+    
+    .six-previous {
+      transform: translateX(40px);
+    }
+  
+    .seven-previous {
+      transform: translateX(50px);
+    }
+
+    .one-next {
+      transform: translateX(-20px);
+    }
+  
+    .two-next {
+      transform: translateX(-10px);
+    }
+    
+    .three-next {
+      transform: translateX(0px);
+    }
+    
+    .four-next {
+      transform: translateX(10px);
+    }
+    
+    .five-next {
+      transform: translateX(0px);
+    }
+    
+    .six-next {
+      transform: translateX(-10px);
+    }
+
+    .seven-next {
+      transform: translateX(-20px);
+    }
+
+    }

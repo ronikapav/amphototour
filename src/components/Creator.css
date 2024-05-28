@@ -235,11 +235,11 @@
   }
 
 
-  @media screen and (min-width: 767px) and (max-width: 1024px) {
+  /* @media screen and (min-width: 767px) and (max-width: 1024px) {
     .author-container {
 
     }
-  }
+  } */
 
   @media (max-width: 800px) {
     
@@ -314,9 +314,17 @@
     }
     }
 
-  @media (max-width: 330px) {
+  @media (max-width: 340px) {
     
     .author-container {
       margin-top:0vh;
+    }
+
+    .about-title {
+      font-size: 14px;
+    }
+
+    .author-title {
+      font-size: 20px;
     }
   }

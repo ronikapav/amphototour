@@ -247,7 +247,7 @@ footer .credits {
 
 @media (max-width: 500px) {
 
-  footer {
+  footer .footer-top  {
     margin-top:20vh;
   }
 
@@ -262,4 +262,32 @@ footer .credits {
   .footer-privacy {
     font-size: 0.8rem;
   }
+}
+
+@media (max-width: 340px) {
+
+  .footer-text  {
+    font-size: 12px;
+  }
+
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-privacy {
+    font-size: 0.8rem;
+  }
+
+  .inputField button {
+    font-size: 16px;
+  }
+
+  footer .copyright {
+    font-size: 14px;
+  }
+  
+  .RoniKa {
+    font-size: 14px;
+  }
+
 }
