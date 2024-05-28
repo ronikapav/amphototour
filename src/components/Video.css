@@ -198,6 +198,10 @@ video {
     .video-excerpt {
       width: 100%;
     }
+
+    .video-hidden {
+      display: none;
+    }
   }
 
 /* h1 {
