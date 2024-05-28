@@ -194,6 +194,12 @@ video {
 
   }
 
+  @media (max-height: 440px) {
+    .video-excerpt {
+      width: 100%;
+    }
+  }
+
 /* h1 {
     font-family: "Raleway", sans-serif;
     font-size: 3em;
