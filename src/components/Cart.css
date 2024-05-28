@@ -13,7 +13,7 @@
 
 /*--====== Cart Section ======--*/
 #cart {
-    position: absolute;
+    position: fixed;
     display: flex;
     top: 120px;
     right: 40px;
@@ -408,6 +408,20 @@
     }
     
 }
+
+@media (max-height: 440px) {
+    #cart {
+        /* position: fixed; */
+        top: 40px;
+        position: absolute;
+    }
+
+    .cart_content {
+        width: 400px;
+        max-height: 300px;
+        padding: 10px;
+    }
+  }
 
 @media screen and (max-width: 400px) {
     #cart {

@@ -1,5 +1,7 @@
 nav.navbar {
     position: fixed;
+    display: flex;
+    flex-direction: row;
     top: 0;
     left: 0;
     padding: 10px 0;
@@ -14,6 +16,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
     padding: 0;
+    z-index: 9;
     /* z-index: 99999999999999999999999999999999999999999999999; */
     background-color: #3a493d;
     border-bottom: 2px solid rgb(255, 185, 33);
@@ -174,7 +177,7 @@ nav.navbar.scrolled .navbar-text .social-icons a {
         border: 2px solid rgb(255, 185, 33);
         padding: 20px;
         margin: 15px;
-        z-index: 999
+        z-index: 999;
     }
 
     ::selection {
