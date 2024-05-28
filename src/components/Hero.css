@@ -1735,9 +1735,12 @@
 
 
   @media screen and (max-width: 1023px) {
+    
     .info-section {
       display: block;
       padding: 0;
+      height: auto;
+      min-height: 950px;
     }
   
     .bg-line {
@@ -1877,6 +1880,11 @@
     }
 
   @media screen and (max-width: 390px) {
+
+    .info-section {
+      min-height: 790px;
+    }
+
     .right-part {
       top: 0px;
     }

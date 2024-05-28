@@ -231,6 +231,14 @@
     .author-h1 {
       font-size: 1.7em;
     }
+
+  }
+
+
+  @media screen and (min-width: 767px) and (max-width: 1024px) {
+    .author-container {
+
+    }
   }
 
   @media (max-width: 800px) {
