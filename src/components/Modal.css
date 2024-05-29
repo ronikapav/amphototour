@@ -417,14 +417,119 @@
 
 .form_wrapper { 
 	width: 300px;
+  padding: 1px 10px 5px 10px;
 	h2 {
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 	h3 {
 		font-size: 1em;
 	}
+
+  .close-modal-button {
+    right: 10px;
+    top: -10px;
+  }
+
+  .checkbox_option{
+    label{
+        font-size: 11px;
+        &:before {
+          width: 0.8em;
+          height: 0.8em;
+          vertical-align: -1px;
+        }
+        &:after {
+          left: -1px;
+          top: 5px;
+        }
+    }
+    input {
+    &:hover + label:before {
+      border-color: black;
+    }
+    &:checked + label {
+      &:before {
+        border-color: black;
+      }
+      &:after {
+        -moz-animation: check 0.8s ease 0s running;
+        -webkit-animation: check 0.8s ease 0s running;
+        animation: check 0.8s ease 0s running;
+        display: block;
+        width: 7px;
+        height: 20px;
+        border-color: black;
+      }
+    }
+  }
+}
 }
 
+@media (max-width: 330px) {
+  .form_wrapper {
+    max-width: 100%;
+    padding: 1px 10px 1px 10px;
+
+    .title_container {
+      padding-bottom: 1px;
+      margin-top: 5px;
+    }
+
+    .row {
+      margin: 10px -10px;
+    }
+
+    .input_field {
+      margin-bottom: 10px;
+      >span {
+        left: 0;
+        top: 2px;
+        height: 90%;
+        >i {
+          padding-top: 5px;
+        }
+      }
+    }
+    
+    h2 {
+		font-size: 1.1em;
+	}
+
+  input {
+    &[type="text"], &[type="email"], &[type="tel"] {
+      padding: 8px 10px 9px 35px;
+      height: 25px;
+      font-size: 12px;
+    }
+    &[type="submit"] {
+		line-height: 25px;
+    font-size: 18px;
+	}    
+    &[type="checkbox"], &[type="radio"] {
+      height: 1px;
+      margin: -1px;
+      width: 1px;
+    }
+  }
+  }
+
+  .close-modal-button {
+    right: 20px;
+    top: -10px;
+  }
+
+  .select_option {
+    select {
+      height: 25px;
+      font-size: 12px;
+      max-width: 100%;
+    }
+  }
+
+  .select_arrow {
+    border-width: 7px 4px 0 4px;
+  }
+}
 }
 
 @media (max-height: 440px) {
