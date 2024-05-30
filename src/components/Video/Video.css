@@ -77,6 +77,10 @@ video {
 
 @media all and (max-width: 1559px) {
 
+  #video-viewport {
+    width: 100%;
+  }
+
   video {
       top: 0;
       left: 0;
@@ -127,6 +131,13 @@ video {
   text-align: justify;
   letter-spacing: 3px;
   color: #000000;
+}
+
+@media all and (max-width: 1400px) and (max-height: 700px) {
+
+#video-viewport {
+  width: 100%;
+}
 }
 
 @media all and (min-width: 768px) {
