@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import productsData from './ProductsData';
 import ProductsCard from './ProductsCard';
 
@@ -20,4 +20,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Home;*/

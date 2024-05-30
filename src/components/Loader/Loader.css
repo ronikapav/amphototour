@@ -1,0 +1,99 @@
+:root {
+  --panel-width: calc(100% / 6);
+  --darkblue: rgb(255, 185, 33);
+  --white: #ebeceb;
+  --lightgray: #f1f1f100;
+}
+
+ul {
+  list-style: none;
+}
+
+.TheLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Logotype {
+  max-width: 100%;
+}
+
+.panels {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 180vw;
+  height: 100%;
+  transform: translateX(-50%) skewX(-35deg);
+  clip-path: circle(100%);
+  z-index: 1;
+  background: var(--lightgray);
+}
+
+.panels .panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--panel-width);
+  transform: scaleY(0);
+  transform-origin: top;
+  background: var(--white);
+}
+
+.panels .panel:nth-child(even) {
+  transform-origin: bottom;
+}
+
+.panels .panel:nth-child(2) {
+  left: calc(var(--panel-width) - 1px);
+  background: var(--darkblue);
+}
+
+.panels .panel:nth-child(3) {
+  left: calc(calc(var(--panel-width) * 2) - 2px);
+  background: var(--white);
+}
+
+.panels .panel:nth-child(4) {
+  left: calc(calc(var(--panel-width) * 3) - 4px);
+  background: var(--darkblue);
+}
+
+.panels .panel:nth-child(5) {
+  left: calc(calc(var(--panel-width) * 4) - 5px);
+  background: var(--white);
+}
+
+.panels .panel:nth-child(6) {
+  left: calc(calc(var(--panel-width) * 5) - 6px);
+  background: var(--darkblue);
+}
+
+.page-main {
+  display: flex;
+  height: 100%;
+  padding: 100px 15px;
+  clip-path: circle(20%);
+  overflow-y: auto;
+  background: var(--lightgray);
+}
+
+.page-main>div {
+  text-align: center;
+  margin: auto;
+}
+
+@media all and (max-width: 1024px) {
+  .panels {
+      width: 200vw;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .panels {
+      width: 235vw;
+  }
+}
