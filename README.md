@@ -35,4 +35,4 @@
 <li>Различные React-библиотеки</li>
 </ul>
 <h2>Автор</h2>
-<a href="https://t.me/ronikapav">Написать автору</a>
+Этот сайт был создан <a href="https://t.me/ronikapav">RoniKa</a> в учебных целях.
