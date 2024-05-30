@@ -1,70 +1,38 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1 align="center">ФОТОТУРЫ И МАСТЕР-КЛАССЫ ПЕЙЗАЖНОЙ ФОТОГРАФИИ АЛЕКСАНДРА МОРОЗОВА</h1>
+<div align="center">
+<a href="https://amphototour.netlify.app/" target="_blank"><img align="center" src="https://i.ibb.co/zHSngmM/2024-05-31-010104.png" whith="500"/></a>
+</div>
+<p align="center">*при клике на картинку вы переходите на сайт*</p>
+<h3 align="center">Этот сайт представляет собой онлайн-платформу для организации фототуров и мастер-классов по пейзажной фотографии от известного трэвел-фотографа Александра Морозова.</h3>
+<h2>Установка</h2>
+<p>1. Склонируйте репозиторий на свой компьютер:</p>
+<pre><code>git clone https://github.com/ronikapav/amphototour.git</code></pre>
+<p>2. Перейдите в папку с проектом:</p>
+<pre><code>cd amphototour</code></pre>
+<p>3. Установите необходимые зависимости:</p>
+<pre><code>npm install</code></pre>
+<p>4. Запустите проект:</p>
+<pre><code>npm start</code></pre>
+<h2>Основные функциональности</h2>
+<ul>
+<li><b>Модальные окна:</b> Пользователи имеют возможность заказать тур или сертификат через модальные окна.</li>
+<li><b>Корзина:</b> Реализована функциональность корзины для покупок с использованием Redux.</li>
+<li><b>Видео и фотографии:</b> Сайт содержит видео и обширную коллекцию фотографий.</li>
+<li><b>Таймеры:</b> Установлены таймеры, отсчитывающие время до начала фототуров.</li>
+<li><b>Слайдер:</b> Для отзывов участников туров и мастер-классов реализован слайдер.</li>
+<li><b>Адаптивность:</b> Сайт адаптирован для большинства современных побильных устройств.</li>
+</ul>
+<h2>Технологии</h2>
+<p>Сайт разработан с использованием следующих технологий:</p>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>JavaScript</li>
+<li>GSAP-анимации</li>
+<li>React</li>
+<li>Redux</li>
+<li>Различные React-библиотеки</li>
+</ul>
+<h2>Автор</h2>
+Этот сайт был создан <a href="https://t.me/ronikapav">RoniKa</a> в учебных целях.
