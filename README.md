@@ -6,9 +6,9 @@
 <h3 align="center">Этот сайт представляет собой онлайн-платформу для организации фототуров и мастер-классов по пейзажной фотографии от известного трэвел-фотографа Александра Морозова.</h3>
 <h2>Установка</h2>
 <p>1. Склонируйте репозиторий на свой компьютер:</p>
-<pre><code>git clone https://github.com/ronikapav/to-do-list-app.git</code></pre>
+<pre><code>git clone https://github.com/ronikapav/amphototour.git</code></pre>
 <p>2. Перейдите в папку с проектом:</p>
-<pre><code>cd to-do-list-app</code></pre>
+<pre><code>cd amphototour</code></pre>
 <p>3. Установите необходимые зависимости:</p>
 <pre><code>npm install</code></pre>
 <p>4. Запустите проект:</p>
