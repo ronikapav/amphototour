@@ -1,32 +1,11 @@
-import React, { useState, useCallback, useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import "./Reviews.css";
-import { slides } from "./ReviewsData";
+import React, { useState, useCallback } from 'react';
+import { slides } from "../../data/Reviews/reviewsData";
+import PreviousButton from './PreviousButton';
+import NextButton from './NextButton';
+import "./Reviews.css"
 
 const ReviewsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const previousRefs = useRef([]);
-  const nextRefs = useRef([]);
-
-  useEffect(() => {
-    gsap.to(previousRefs.current, {
-      x: -10,
-      duration: 1,
-      ease: "power2.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
-  }, []);
-
-  useEffect(() => {
-    gsap.to(nextRefs.current, {
-      x: 10,
-      duration: 1,
-      ease: "power2.inOut",
-      yoyo: true,
-      repeat: -1,
-    });
-  }, []);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((currentSlide + 1) % slides.length);
@@ -59,55 +38,7 @@ const ReviewsSection = () => {
         О ПЕЙЗАЖАХ, КОТОРЫЕ ВЕДУТ НАС К НОВЫМ ГОРИЗОНТАМ ТВОРЧЕСТВА
       </h1>
       <div className="slider">
-        <button
-          title="Слайд"
-          ref={(el) => previousRefs.current.push(el)}
-          onClick={prevSlide}
-          className="button btn-previous"
-        >
-          <div className="line one-previous">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line two-previous">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line three-previous">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line four-previous">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line five-previous">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line six-previous">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line seven-previous">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-        </button>
+      <PreviousButton onClick={prevSlide} />
         <ul className="cards">
           {slides.map((slide, index) => (
             <li
@@ -116,7 +47,7 @@ const ReviewsSection = () => {
             >
               <a href="/" className="card card_img">
                 <img
-                  src={`./${slide.image}.jpeg`}
+                  src={slide.image}
                   className="card__image"
                   alt=""
                 />
@@ -130,7 +61,7 @@ const ReviewsSection = () => {
                     </svg>
                     <img
                       className="card__thumb"
-                      src={`./${slide.icon}.jpeg`}
+                      src={slide.icon}
                       alt=""
                     />
                     <div className="card__header-text">
@@ -144,55 +75,7 @@ const ReviewsSection = () => {
             </li>
           ))}
         </ul>
-        <button
-          title="Слайд"
-          ref={(el) => nextRefs.current.push(el)}
-          onClick={nextSlide}
-          className="button btn-next"
-        >
-          <div className="line one-next">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line two-next">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line three-next">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line four-next">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line five-next">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line six-next">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-          <div className="line seven-next">
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="none round"></div>
-            <div className="round"></div>
-          </div>
-        </button>
+        <NextButton onClick={nextSlide} />
       </div>
     </div>
   );

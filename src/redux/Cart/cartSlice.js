@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { saveToLocalStorage, loadFromLocalStorage } from '../../services/Cart/localStorage';
 
 const initialState = {
   isCartOpen: false,
@@ -60,23 +61,9 @@ export const { toggleCart, addItem, removeItem, incrementItem, decrementItem } =
 export default CartSlice.reducer;
 
 export const saveCartToLocalStorage = (state) => {
-  try {
-    const serializedState = JSON.stringify(state);
-    localStorage.setItem("cart", serializedState);
-  } catch (e) {
-    console.error(e);
-  }
+  saveToLocalStorage('cart', state);
 };
 
 export const loadCartFromLocalStorage = () => {
-  try {
-    const serializedState = localStorage.getItem("cart");
-    if (serializedState === null) {
-      return undefined;
-    }
-    return JSON.parse(serializedState);
-  } catch (e) {
-    console.error(e);
-    return undefined;
-  }
+  return loadFromLocalStorage('cart');
 };

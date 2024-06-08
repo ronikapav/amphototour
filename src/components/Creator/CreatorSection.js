@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Creator.css";
-import alex from "./alex-photo.png";
+import alex from "../../assets/alex-photo.png";
 
 const CreatorSection = () => {
   const [isButtonClicked, setButtonClicked] = useState(false);
@@ -38,27 +38,27 @@ const CreatorSection = () => {
       </span>
       <h1 className="author-title">ОТКРЫВАЮ МИР ЧЕРЕЗ ОБЪЕКТИВ</h1>
 
-      <ul className="author-ul">
-        <li className="author-post">
+      <div className="author-content">
+        <div className="author-post">
           <div className="author-excerpt author-card">
             <header className="author-header">
               <h2 className="author-h1">Меня зовут Александр Морозов</h2>
             </header>
             <p className="author-p">
-              Вот уже 15 лет моя главная страсть - пейзажная фотография. Ради
-              красивого кадра я готов вставать задолго до рассвета и ложиться
-              глубоко заполночь. Я карабкался на барханы в пылевую бурю и
-              ночевал на извергающемся вулкане.
+            Вот уже 15 лет моя главная страсть - пейзажная фотография. Ради
+            красивого кадра я готов вставать задолго до рассвета и ложиться
+            глубоко заполночь. Я карабкался на барханы в пылевую бурю и
+            ночевал на извергающемся вулкане.
             </p>
             <div className="author-cta">
               <button className="author-btn" onClick={handleButtonClick}>
-                ПОДРОБНЕЕ
+              ПОДРОБНЕЕ
               </button>
             </div>
           </div>
           <img className="author-image" src={alex} alt="Alex Morozov" />
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };

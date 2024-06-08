@@ -1826,6 +1826,13 @@
   }
 }
 
+@media all and (max-width: 932px) and (max-height: 430px) {
+
+    .info-section::before {
+        background: none;
+      }
+  }
+
 @media all and (max-width: 414px) and (max-height: 736px) {
 
   .info-section {

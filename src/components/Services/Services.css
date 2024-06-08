@@ -185,28 +185,28 @@
 }
 
 .services-card:nth-child(1) .services-circle {
-  background: linear-gradient(0deg, rgba(255, 186, 33, 0.3785889355742297) 0%, rgba(255, 186, 33, 1) 100%), url('./places.png') no-repeat 50% 50% / cover;
+  background: linear-gradient(0deg, rgba(255, 186, 33, 0.3785889355742297) 0%, rgba(255, 186, 33, 1) 100%), url('../../assets/places.png') no-repeat 50% 50% / cover;
   bottom: 0;
   right: 0;
   clip-path: circle(calc(5.85rem + 7.5vw) at 100% 100%);
 }
 
 .services-card:nth-child(2) .services-circle {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.379) 0%, rgb(240, 240, 240) 100%), url('./comfortable.png') no-repeat 50% 50% / cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.379) 0%, rgb(240, 240, 240) 100%), url('../../assets/comfortable.png') no-repeat 50% 50% / cover;
   bottom: 0;
   left: 0;
   clip-path: circle(calc(5.85rem + 7.5vw) at 0% 100%);
 }
 
 .services-card:nth-child(3) .services-circle {
-  background: linear-gradient(0deg, rgb(240, 240, 240) 0%, rgba(0, 0, 0, 0.379) 100%), url('./logistics.png') no-repeat 50% 50% / cover;
+  background: linear-gradient(0deg, rgb(240, 240, 240) 0%, rgba(0, 0, 0, 0.379) 100%), url('../../assets/logistics.png') no-repeat 50% 50% / cover;
   top: 0;
   right: 0;
   clip-path: circle(calc(5.85rem + 7.5vw) at 100% 0%);
 }
 
 .services-card:nth-child(4) .services-circle {
-  background: linear-gradient(0deg, rgba(255, 186, 33, 1) 0%, rgba(255, 186, 33, 0.3785889355742297) 100%), url('./groups.png') no-repeat 50% 50% / cover;
+  background: linear-gradient(0deg, rgba(255, 186, 33, 1) 0%, rgba(255, 186, 33, 0.3785889355742297) 100%), url('../../assets/groups.png') no-repeat 50% 50% / cover;
   top: 0;
   left: 0;
   clip-path: circle(calc(5.85rem + 7.5vw) at 0% 0%);

@@ -1,15 +1,20 @@
+import iconOne from '../../assets/icon-one.jpeg';
+import iconTwo from '../../assets/icon-two.jpeg';
+import girl from '../../assets/girl.jpeg';
+import boy from '../../assets/boy.jpeg';
+
 export const slides = [
   {
-    icon: "icon-one",
-    image: "girl",
+    icon: iconOne,
+    image: girl,
     title: "Юлия Паршина",
     tagline:
       'Прошла классический мастер-класс по пейзажной съемке и отправилась в фототур "От Шанхая до Цветных гор".',
     text: '"Я всегда любила фотографировать, но после мастер-класса мои навыки значительно улучшились. Фототур помог мне использовать новые знания и создать незабываемые снимки. Это было невероятное путешествие, и я с нетерпением жду следующее!"',
   },
   {
-    icon: "icon-two",
-    image: "boy",
+    icon: iconTwo,
+    image: boy,
     title: "Стас Егоров",
     tagline:
       'Прошел мастер-класс по съемкам с дрона и отправился в фототур "Путешествие к Альпийским вершинам".',

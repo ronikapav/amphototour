@@ -1,8 +1,15 @@
-export const ProductsData = [
+import sea from '../../assets/sea.jpeg';
+import forest from '../../assets/forest.jpeg';
+import castle from '../../assets/castle.jpeg';
+import drones from '../../assets/drones.jpeg';
+import cave from '../../assets/cave.jpeg';
+import stars from '../../assets/stars.jpeg';
+
+export const productsData = [
   {
     id: 1,
 
-    img: "sea",
+    img: sea,
 
     name: "МОРСКОЙ ПЕЙЗАЖ",
 
@@ -16,7 +23,7 @@ export const ProductsData = [
   {
     id: 2,
 
-    img: "forest",
+    img: forest,
 
     name: "КЛАССИЧЕСКИЙ ПЕЙЗАЖ",
 
@@ -30,7 +37,7 @@ export const ProductsData = [
   {
     id: 3,
 
-    img: "castle",
+    img: castle,
 
     name: "АРХИТЕКТУРНАЯ СЪЕМКА",
 
@@ -44,7 +51,7 @@ export const ProductsData = [
   {
     id: 4,
 
-    img: "drone",
+    img: drones,
 
     name: "ДРОНО ФОТОГРАФИЯ",
 
@@ -58,7 +65,7 @@ export const ProductsData = [
   {
     id: 5,
 
-    img: "cave",
+    img: cave,
 
     name: "СЪЕМКА В ПЕЩЕРАХ",
 
@@ -72,7 +79,7 @@ export const ProductsData = [
   {
     id: 6,
 
-    img: "start",
+    img: stars,
 
     name: "ТРЕКИ ЗВЕЗД",
 

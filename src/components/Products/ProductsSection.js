@@ -1,6 +1,6 @@
 import React from "react";
 import ProductsCard from "./ProductsCard ";
-import { ProductsData } from "./ProductsData";
+import { productsData } from "../../data/Products/productsData";
 
 const ProductsSection = () => {
   return (
@@ -27,7 +27,7 @@ const ProductsSection = () => {
           СДЕЛАТЬ ВАШИ ФОТОГРАФИИ ЛУЧШЕ УЖЕ СЕЙЧАС
         </h1>
         <div className="product-card">
-          {ProductsData.map((item) => (
+          {productsData.map((item) => (
             <ProductsCard key={item.id} {...item} />
           ))}
         </div>

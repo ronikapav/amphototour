@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./TimerTours.css";
+import TimerTours from "../../components/TimerTours/TimerTours";
 
-const AlgeriaTours = () => {
+const AfricaTours = () => {
   const [timer, setTimer] = useState({
     months: 0,
     days: 0,
@@ -10,7 +10,7 @@ const AlgeriaTours = () => {
     seconds: 0,
   });
 
-  const newDate = new Date('12-15-2024 00:00:00').getTime();
+  const newDate = new Date('06-20-2024 00:00:00').getTime();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -42,29 +42,8 @@ const AlgeriaTours = () => {
   }, [newDate]);
 
   return (
-    <div className="countdown">
-    <div>
-      <span className="number_timer months">{timer.months < 10 ? `0${timer.months}` : timer.months}</span>
-      <span className="text_timer">мес</span>
-    </div>
-    <div>
-      <span className="number_timer days">{timer.days < 10 ? `0${timer.days}` : timer.days}</span>
-      <span className="text_timer">день</span>
-    </div>
-    <div>
-      <span className="number_timer hours">{timer.hours < 10 ? `0${timer.hours}` : timer.hours}</span>
-      <span className="text_timer">час</span>
-    </div>
-    <div>
-      <span className="number_timer minutes">{timer.minutes < 10 ? `0${timer.minutes}` : timer.minutes}</span>
-      <span className="text_timer">мин</span>
-    </div>
-    <div>
-      <span className="number_timer seconds">{timer.seconds < 10 ? `0${timer.seconds}` : timer.seconds}</span>
-      <span className="text_timer">сек</span>
-    </div>
-  </div>
+    <TimerTours timer={timer} />
   );
 };
 
-export default AlgeriaTours;
+export default AfricaTours;

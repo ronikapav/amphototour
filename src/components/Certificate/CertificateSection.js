@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Certificate.css";
 import Modal from "../Modal/Modal";
-import Certificate from "./certificate.png";
+import Certificate from "../../assets/certificate.png";
 
 const CertificateSection = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -36,8 +36,8 @@ const CertificateSection = () => {
       <h1 className="certificate-title-h1">
         КОГДА ВАШ ДРУГ ИЛИ БЛИЗКИЙ ЧЕЛОВЕК УВЛЕКАЕТСЯ ФОТОГРАФИЕЙ?
       </h1>
-      <ul className="certificate-ul">
-        <li className="certificate-post">
+      <div className="certificate-content">
+        <div className="certificate-post">
           <img
             className="certificate-image"
             src={Certificate}
@@ -60,8 +60,8 @@ const CertificateSection = () => {
             </div>
             <Modal isOpen={modalIsOpen} onRequestClose={closeModal} />
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };

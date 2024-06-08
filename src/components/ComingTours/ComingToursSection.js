@@ -1,12 +1,7 @@
 import React from "react";
 import ComingToursCard from "./ComingToursCard";
 import "./ComingTours.css";
-import africa from "./south-africa.png";
-import indonesia from "./indonesia.png";
-import algeria from "./algeria.png";
-import AfricaTours from './AfricaTours';
-import IndonesiaTours from "./IndonesiaTours";
-import AlgeriaTours from "./AlgeriaTours";
+import { comingToursData } from "../../data/ComingTours/comingToursData";
 
 const ComingToursSection = () => (
   <section id="coming-tours-section" className="coming-tours-section">
@@ -30,36 +25,19 @@ const ComingToursSection = () => (
     <h1 className="tours-title">ВОЗМОЖНОСТЬ ИССЛЕДОВАТЬ МИР ВМЕСТЕ СО МНОЙ!</h1>
     <div className="container">
       <div className="row">
-        <ComingToursCard
-          backgroundUrl={africa}
-          imageUrl={africa}
-          title="ЮАР"
-          meta="Тайны двух океанов"
-          date="20 - 28 июня 2024 года"
-          author="Алекс Морозов"
-          authorRole="Гид"
-          timer={<AfricaTours/>}
-        />
-        <ComingToursCard
-          backgroundUrl={indonesia}
-          imageUrl={indonesia}
-          title="ИНДОНЕЗИЯ"
-          meta="Семь островов"
-          date="3 - 13 сентября 2024 года"
-          author="Алекс Морозов"
-          authorRole="Гид"
-          timer={<IndonesiaTours/>}
-        />
-        <ComingToursCard
-          backgroundUrl={algeria}
-          imageUrl={algeria}
-          title="АЛЖИР"
-          meta="Дюны Сахары"
-          date="15 - 22 декабря 2024 года"
-          author="Алекс Морозов"
-          authorRole="Гид"
-          timer={<AlgeriaTours/>}
-        />
+        {comingToursData.map((tour, index) => (
+          <ComingToursCard
+            key={index}
+            backgroundUrl={tour.backgroundUrl}
+            imageUrl={tour.imageUrl}
+            title={tour.title}
+            meta={tour.meta}
+            date={tour.date}
+            author={tour.author}
+            authorRole={tour.authorRole}
+            timer={tour.timer}
+          />
+        ))}
       </div>
     </div>
   </section>

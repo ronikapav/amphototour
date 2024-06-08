@@ -3,13 +3,13 @@ import gsap from "gsap";
 import SplitType from "split-type";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Hero.css";
-import circle from "./dash-circle.svg";
-import oval from "./circle-ring.svg";
-import wave from "./wave.svg";
-import VFX from "./VFX.jpeg";
-import Drone from "./Drone.jpeg";
-import Video from "./Videography.jpeg";
-import Photo from "./Photography.jpeg";
+import circle from "../../assets/dash-circle.svg";
+import oval from "../../assets/circle-ring.svg";
+import wave from "../../assets/wave.svg";
+import VFX from "../../assets/VFX.jpeg";
+import Drone from "../../assets/Drone.jpeg";
+import Video from "../../assets/Videography.jpeg";
+import Photo from "../../assets/Photography.jpeg";
 
 const HeroSection = () => {
   const textRef = useRef(null);
@@ -26,7 +26,7 @@ const HeroSection = () => {
         duration: 1,
       });
     });
-
+    
     const textChars = textRef.current;
     gsap.from(textChars, {
       opacity: 0,

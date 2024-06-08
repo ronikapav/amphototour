@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./Loader.css";
-import logo from "./Logotype.png";
+import logo from "../../assets/Logotype.png";
 
 const Loader = () => {
   const imgRef = useRef(null);

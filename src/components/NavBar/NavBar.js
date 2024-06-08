@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleCart } from "../Cart/CartSlice";
 import ModalNavBar from "../Modal/ModalNavBar";
-import logo from "./logo.png";
+import logo from "../../assets/logo.png";
+import { toggleCart } from "../../redux/Cart/cartSlice";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");

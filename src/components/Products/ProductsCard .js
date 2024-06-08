@@ -1,27 +1,30 @@
 import "./Products.css";
-import { addItem, removeItem } from "../Cart/CartSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useSnackbar } from "notistack";
 import { BsCart, BsCartFill } from "react-icons/bs";
+import { addItem, removeItem } from "../../redux/Cart/cartSlice";
 
 const ProductsCard = (props) => {
+  const hoverElements = useRef([]);
+
   useEffect(() => {
-    const elements = document.querySelectorAll(".hover");
-    elements.forEach((element) => {
-      element.addEventListener("mouseleave", function () {
-        element.classList.remove("hover");
-      });
+    const currentHoverElements = hoverElements.current;
+
+    hoverElements.current.forEach((element) => {
+      element.addEventListener("mouseleave", handleMouseLeave);
     });
 
     return () => {
-      elements.forEach((element) => {
-        element.removeEventListener("mouseleave", function () {
-          element.classList.remove("hover");
-        });
+       currentHoverElements.forEach((element) => {
+        element.removeEventListener("mouseleave", handleMouseLeave);
       });
     };
   }, []);
+
+  const handleMouseLeave = (event) => {
+    event.target.classList.remove("hover");
+  };
 
   const { img, name, description, price, id } = props;
 
@@ -62,10 +65,10 @@ const ProductsCard = (props) => {
   };
 
   return (
-    <figure className="products-card">
-      <img src={`./${img}.jpeg`} alt="" />
+    <figure className="products-card" ref={(element) => hoverElements.current.push(element)}>
+      <img src={img} alt="" />
       <div className="products-image">
-        <img src={`./${img}.jpeg`} alt="" />
+        <img src={img} alt="" />
       </div>
       <figcaption>
         <h3>{name}</h3>
@@ -76,19 +79,11 @@ const ProductsCard = (props) => {
       </div>
       <button
         type="button"
-        className={`btn products-add-to-cart ${
-          isAdded ? "Добавлено" : "Купить"
-        }`}
+        className={`btn products-add-to-cart ${isAdded ? "Добавлено" : "Купить"}`}
         onClick={handleAddToCart}
       >
         {isAdded ? "Добавлено" : "Купить"}
-        <i>
-          {isAdded ? (
-            <BsCartFill className="BsCart" />
-          ) : (
-            <BsCart className="BsCart" />
-          )}
-        </i>
+        <i>{isAdded ? <BsCartFill className="BsCart" /> : <BsCart className="BsCart" />}</i>
       </button>
     </figure>
   );
